@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1acba3d7e47588d468cdfe091929aa9a, type: 3}
   m_Name: Q4
   m_EditorClassIdentifier: 
-  question: What is the result of one plus five ?
+  question: What is the main purpose of the Start() function in Unity?
   answers:
-  - 6
-  - 4
-  - 5
-  - 3
-  correctAnswerIdx: 0
+  - It is called when the GameObject is first created.
+  - It is called every frame
+  - It is called when the GameObject is destroyed.
+  - It is called when the game is started.
+  correctAnswerIdx: 3

@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1acba3d7e47588d468cdfe091929aa9a, type: 3}
   m_Name: Q2
   m_EditorClassIdentifier: 
-  question: What is the result of seven plus five ?
+  question: Which Unity component is responsible for detecting collisions between
+    GameObjects?
   answers:
-  - 11
-  - 12
-  - 13
-  - 14
+  - Rigidbody
+  - Collider
+  - Transform
+  - Renderer
   correctAnswerIdx: 1

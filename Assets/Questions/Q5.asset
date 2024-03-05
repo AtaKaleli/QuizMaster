@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1acba3d7e47588d468cdfe091929aa9a, type: 3}
   m_Name: Q5
   m_EditorClassIdentifier: 
-  question: What is the result of three plus five ?
+  question: Which Unity method is used for updating the game state once per frame?
   answers:
-  - 3
-  - 12
-  - 7
-  - 8
-  correctAnswerIdx: 3
+  - Awake()
+  - Update()
+  - FixedUpdate()
+  - LateUpdate()
+  correctAnswerIdx: 1
