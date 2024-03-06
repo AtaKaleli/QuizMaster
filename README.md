@@ -4,11 +4,15 @@ The goal of the game is that you will try to answer 10 multiple choice question 
 
 
 
-MENU
+<b>MENU</b>
+
+
 ![menu](https://github.com/AtaKaleli/QuizMaster/assets/158140699/c6f27dec-7e5d-49ef-a5dd-2c21284e3141)
 
 
 
 
-GAME
+<b>GAME</b>
+
+
 ![game](https://github.com/AtaKaleli/QuizMaster/assets/158140699/a1d77b5d-8192-4a79-a0c9-bb9097624265)
