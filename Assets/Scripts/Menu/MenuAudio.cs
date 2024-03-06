@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class MenuAudio : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static MenuAudio instance;
+
+    [SerializeField] private AudioSource backgroundAudio;
+    [SerializeField] private AudioSource sfxAudio;
+    [SerializeField] private AudioClip buttonClickSFX;
+
+
+    private void Awake()
     {
-        
+        instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public void ButtonClickSFX() => sfxAudio.PlayOneShot(buttonClickSFX);
+    public void MuteBackgroundAudio() => backgroundAudio.Pause();
+
+
+
 }
