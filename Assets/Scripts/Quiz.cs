@@ -71,7 +71,7 @@ public class Quiz : MonoBehaviour
     {
         if(questions.Count > 0)
         {
-
+            GameAudio.instance.TimerClickSFX();
             SetButtonState(true);
             SetDefaultButtonSprite();
             GetRandomQuestion();
@@ -118,6 +118,7 @@ public class Quiz : MonoBehaviour
     {
         if (index == currentQuestion.GetCorrectAnswerIdx())
         {
+            GameAudio.instance.CorrectAnswerClickSFX();
             questionText.text = "Correct";
             Image buttonImage = answerButtons[index].GetComponent<Image>();
             buttonImage.sprite = correctAnswerSprite;
@@ -125,6 +126,7 @@ public class Quiz : MonoBehaviour
         }
         else
         {
+            GameAudio.instance.WrongAnswerClickSFX();
             correctAnswerIdx = currentQuestion.GetCorrectAnswerIdx();
             int correctOption = correctAnswerIdx + 1;
             questionText.text = "False! Correct answer is option " + correctOption;
@@ -137,6 +139,7 @@ public class Quiz : MonoBehaviour
     public void OnAnswerSelected(int index)
     {
         hasAnsweredEarly = true;
+        GameAudio.instance.StopTimerClickSFX();
         DisplayAnswer(index);
         SetButtonState(false);
         timer.CancelTimer();
